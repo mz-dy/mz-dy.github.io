@@ -1,0 +1,20 @@
+table, th, td {border: 1px solid black; text-align:center}
+h1, h2, h3, h4, h5, h6 {color:whitesmoke; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; text-align:center;}
+body {background-color:rgb(21, 21, 24);}
+p {margin-top: 0; text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:rgb(163, 181, 199); font-size:large;}
+li {margin:10px 80px; text-align:left; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:rgb(163, 181, 199); font-size:large;}
+.profile {background-color:darkslategray; width:100%; overflow:auto; display: flex;}
+.profile div {width:33%; float:left;}
+img {float: left; width: 200px; height: auto; margin-left: 2%; border-radius: 12px;}
+#name {width: 100%; text-align:center; font-size:30px; padding:10px}
+
+.main {width:100%; overflow:auto; margin-top: 30px;}
+#contact {width:33%; float:left; }
+.skill {border: 2px solid rgb(163, 181, 199); border-radius: 10px; padding: 5px; width: 40%; margin:10px auto}
+
+
+
+#about {width: 66%; float:left; border-left: 4px solid whitesmoke;}
+.education {margin-bottom: 30px;}
+.edu1 {color:lightgrey; margin: auto 100px; font-weight:bold; text-align: left; font-size: 20px;}
+.edu2 {margin: auto 100px; font-weight:normal; text-align: left;}
