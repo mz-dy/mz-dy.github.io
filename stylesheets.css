@@ -12,12 +12,12 @@ img {width: 200px; height: auto; margin-left: 2%; border-radius: 12px;}
 
 #links {background-color:antiquewhite; text-align:center; display: flex; justify-content: space-around; padding: 10px 0;}
 
-.main {width:100%; overflow:auto; margin: 30px 0;}
-#contact {width:33%; float:left; border-right: 4px solid whitesmoke;}
+.main {width:100%; overflow:auto; margin: 40px 0;}
+#contact {width:33%; float:left;}
 .geninfoh {text-decoration: underline whitesmoke 3px; font-size: 25px;}
 .skill {color:rgb(21, 21, 24); border: 2px solid rgb(163, 181, 199); border-radius: 10px; padding: 5px; width: 40%; margin:10px auto; background-color: rgb(163, 181, 199);}
 
-#about {width: 66%; float:left;}
+#about {width: 66%; float:left; display: flex; flex-direction: column; border-left: 4px solid whitesmoke;}
 .education {margin-bottom: 30px;}
 .edu1 {color:lightgrey; margin: auto 100px; font-weight:bold; text-align: left; font-size: 20px;}
 .edu2 {margin: auto 100px; font-weight:normal; text-align: left;}
