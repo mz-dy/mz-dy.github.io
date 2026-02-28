@@ -44,11 +44,9 @@ img {width: 200px; height: auto; margin-left: 2%; border-radius: 12px;}
     height: 80px;
     background-color: antiquewhite;
     border: 8px solid rgb(163,181,199); /* optional border for style */
-    border-radius: 50%;           /* makes it a circle */
-    
-    position: absolute;           /* positioning */
-    left: 525px;                      /* aligns with the start of the years column */
-    top: 480px;                    /* adjust vertically for alignment */
+    border-radius: 100%;           /* makes it a circle */
+    margin: 0 400px; padding: 0;
+                      /* adjust vertically for alignment */
 }
 
 .timeline-circle2 {
