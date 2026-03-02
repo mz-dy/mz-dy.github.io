@@ -1,24 +1,20 @@
-table,
-th,
-td {
-  border: 1px solid black;
-  text-align: center;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   color: whitesmoke;
   font-family:
     "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
 }
+
 body {
-  background-color: rgb(21, 21, 24);
+  background-image: radial-gradient(
+    circle,
+    rgb(40, 40, 40),
+    rgb(21, 21, 24),
+    rgb(20, 20, 20)
+  );
 }
+
 p {
   margin-top: 0;
   text-align: center;
@@ -26,20 +22,20 @@ p {
   color: rgb(163, 181, 199);
   font-size: 22px;
 }
+
 a {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: rgb(3, 41, 79);
   font-size: 20px;
   text-align: center;
-  padding: 0 3px;
-  transition:
-    background-color 0.2s,
-    color 0.2s;
+
+  border-radius: 50%;
+  transition: text-shadow 0.2s ease;
 }
 a:hover {
-  color: rgb(163, 181, 199);
-  background-color: rgb(48, 80, 112);
+  text-shadow: 3px 3px rgba(48, 80, 112, 0.45);
 }
+
 li {
   margin: 10px 80px;
   text-align: left;
@@ -47,21 +43,25 @@ li {
   color: rgb(163, 181, 199);
   font-size: 22px;
 }
+
 .profile {
   background-color: rgb(47, 79, 79);
   display: flex;
   flex-direction: column;
 }
+
 .header {
   display: flex;
   padding: 20px;
 }
+
 img {
   width: 200px;
   height: auto;
   margin-left: 2%;
   border-radius: 12px;
 }
+
 #name {
   width: 100%;
   text-align: center;
@@ -81,18 +81,22 @@ img {
   overflow: auto;
   margin: 30px 0;
 }
+
 #contact {
   width: 33%;
   float: left;
   padding: 40px 0;
 }
+
 .geninfoh {
   text-decoration: underline whitesmoke 3px;
   font-size: 25px;
 }
+
 .geninfop {
   word-wrap: break-word;
 }
+
 .skill {
   color: rgb(21, 21, 24);
   border: 2px solid rgb(163, 181, 199);
@@ -102,14 +106,17 @@ img {
   margin: 10px auto;
   background-color: rgb(163, 181, 199);
 }
+
 #prog {
   display: flex;
   text-align: center;
   justify-content: space-evenly;
 }
+
 .lang {
   text-align: right;
 }
+
 .lang_score {
   text-align: left;
 }
@@ -119,9 +126,11 @@ img {
   flex-direction: column;
   border-left: 4px solid whitesmoke;
 }
+
 .education {
   margin-bottom: 30px;
 }
+
 .edu1 {
   color: lightgrey;
   margin: auto 100px;
@@ -129,6 +138,7 @@ img {
   text-align: left;
   font-size: 20px;
 }
+
 .edu2 {
   margin: auto 100px;
   font-weight: normal;
@@ -150,17 +160,20 @@ img {
   width: 100%;
   display: flex;
 }
+
 .years {
   width: 30%;
   float: left;
   background-color: rgb(28, 36, 38);
 }
+
 .desc {
   width: 69%;
   float: left;
   border-left: 4px solid whitesmoke;
   padding-left: 10px;
 }
+
 .company {
   color: whitesmoke;
   font-family:
@@ -170,6 +183,7 @@ img {
   margin-bottom: 0px;
   font-size: 60px;
 }
+
 .role {
   color: whitesmoke;
   font-family:
@@ -177,6 +191,7 @@ img {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: left;
 }
+
 .exp {
   font-weight: normal;
   text-align: left;
@@ -192,6 +207,7 @@ img {
   color: rgb(163, 181, 199);
   font-size: 20px;
 }
+
 .loc {
   margin-top: 0;
   padding-right: 10px;
@@ -217,4 +233,16 @@ img {
   padding: 0;
   position: relative;
   left: calc(30% - 24px);
+}
+
+.hov {
+  color: whitesmoke;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.hov:hover {
+  color: burlywood;
+  transition: 0.2s ease-out;
 }
