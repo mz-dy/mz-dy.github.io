@@ -76,6 +76,28 @@ img {
   padding: 10px 0;
 }
 
+#email{
+  cursor: pointer;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 130px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  left: 23%;
+  top: 44%;  
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 .main {
   width: 100%;
   overflow: auto;
