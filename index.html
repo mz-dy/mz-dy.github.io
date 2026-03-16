@@ -26,15 +26,17 @@
                 <div>
                 <h3 class="geninfoh"> CONTACT INFO </h3>
                 <div class="tooltip">
-                <p class="geninfop" id="email" onclick="copyEmail()"> <i class="fa-solid fa-envelope-open" style="color: rgb(163, 181, 199);"></i> mileahzoeiody@gmail.com </p>
+                <p class="geninfop" id="email" onclick="copyEmail()" onmouseleave="resetText()"> <i class="fa-solid fa-envelope-open" style="color: rgb(163, 181, 199);"></i> mileahzoeiody@gmail.com </p>
                 <span class="tooltiptext">Copy Email</span> 
                 </div>
                 <script>
                     function copyEmail() {
-                    let email = document.getElementById("email").innerText;
-                    navigator.clipboard.writeText(email);
-                    //alert("Email copied!");
-                    document.querySelector(".tooltiptext").innerText ="Copied Email!";
+                        let email = document.getElementById("email").innerText;
+                        navigator.clipboard.writeText(email);
+                        document.querySelector(".tooltiptext").innerText ="Copied Email!";
+                    }
+                    function resetText() {
+                        document.querySelector(".tooltiptext").innerText ="Copy Email";
                     }
                 </script>
 
