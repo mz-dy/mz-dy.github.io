@@ -68,6 +68,20 @@ img {
   font-size: 30px;
 }
 
+#title {
+  font-size: 30px;
+}
+
+#typeletter {
+  font-size: 30px;
+  color: rgb(9, 255, 0);
+}
+
+#typecursor {
+  color: rgb(9, 255, 0);
+  font-size: 30px;
+}
+
 #links {
   background-color: antiquewhite;
   text-align: center;
@@ -101,6 +115,10 @@ img {
   cursor: pointer;
 }
 
+.tooltip{
+  position: relative;
+}
+
 .tooltiptext {
   visibility: hidden;
   width: 130px;
@@ -111,9 +129,9 @@ img {
   border-radius: 6px;
   padding: 5px 0;
   position: absolute;
+  left: 78%;
   z-index: 1;
-  left: 23%;
-  top: 44%;  
+  bottom: 20%;
 }
 
 .tooltip:hover .tooltiptext {
@@ -264,6 +282,7 @@ img {
     "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
+  cursor: default;
 }
 .hov:hover {
   color: burlywood;

@@ -11,7 +11,27 @@
                 <img src="portrait.jpeg" alt="profile picture">
                 <div id="name">
                     <h1 style="padding: 5px; margin-bottom: 5px;"> MILEAH ZOEI DY </h1>
-                    <p style="font-size:30px;"> Web Developer </p>
+                    <p><span id="title"></span><span id="typeletter"></span><span id="typecursor">_</span></p>
+                    <script>
+                        let title = "Web Developer";
+                        let i = 0;
+
+                        function type() {
+                            let typedOut = title.substring(0, i);
+                            document.getElementById("typeletter").innerHTML = title.charAt(i);
+                            document.getElementById("title").innerHTML = typedOut;
+                            i++;
+                            if (i < title.length) {
+                                setTimeout(type, 90);
+                            }
+                            else {
+                                document.getElementById("title").innerHTML = title;
+                                document.getElementById("typeletter").innerHTML = "";
+                                document.getElementById("typecursor").innerHTML = "";
+                            }
+                        }
+                        type();
+                    </script>
                 </div>    
             </div>
 
@@ -25,10 +45,10 @@
             <div id="contact">
                 <div>
                 <h3 class="geninfoh"> CONTACT INFO </h3>
-                <div class="tooltip">
-                <p class="geninfop" id="email" onclick="copyEmail()" onmouseleave="resetText()"> <i class="fa-solid fa-envelope-open" style="color: rgb(163, 181, 199);"></i> mileahzoeiody@gmail.com </p>
-                <span class="tooltiptext">Copy Email</span> 
-                </div>
+                    <div class="tooltip">
+                    <p class="geninfop" id="email" onclick="copyEmail()" onmouseleave="resetText()"> <i class="fa-solid fa-envelope-open" style="color: rgb(163, 181, 199);"></i> mileahzoeiody@gmail.com </p>
+                    <span class="tooltiptext">Copy Email</span> 
+                    </div>
                 <script>
                     function copyEmail() {
                         let email = document.getElementById("email").innerText;
