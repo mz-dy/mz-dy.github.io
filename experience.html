@@ -15,9 +15,26 @@
 		        <a href="experience.html">WORK EXPERIENCE</a>
             </div>
         </div>
-
+        <script>
+            window.addEventListener("scroll", function(){
+                let scrollPercent = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+                if(scrollPercent < 0.3){
+                    document.getElementById("job1").style.backgroundColor = "rgba(187, 245, 225, 0.190)";
+                    document.getElementById("job2").style.backgroundColor = "";
+                    document.getElementById("job3").style.backgroundColor = "";
+                } else if(scrollPercent < 0.6 && scrollPercent >= 0.3){
+                    document.getElementById("job1").style.backgroundColor = "";
+                    document.getElementById("job2").style.backgroundColor = "rgba(187, 245, 225, 0.190)";
+                    document.getElementById("job3").style.backgroundColor = "";
+                } else if(scrollPercent < 1 && scrollPercent >= 0.6){
+                    document.getElementById("job1").style.backgroundColor = "";
+                    document.getElementById("job2").style.backgroundColor = "";
+                    document.getElementById("job3").style.backgroundColor = "rgba(187, 245, 225, 0.190)";
+                }
+            });
+        </script>
         <div class="main_work">
-            <div class="job">
+            <div class="job" id="job1">
                 <div class="years">
                     <h2 class="range"> <br><br><br> January 2027 &mdash; October 2027 </h2>
                     <p class="loc"> <i class="fa-solid fa-location-dot" style="color: rgb(163, 181, 199);"></i> Quezon City, Philippines </p>
@@ -34,7 +51,7 @@
                 </div>
             </div>
             <div class="timeline-circle"></div>
-            <div class="job">
+            <div class="job" id="job2">
                 <div class="years">
                     <h2 class="range"> <br><br><br> January 2028 &mdash; August 2031 </h2>
                     <p class="loc"> <i class="fa-solid fa-location-dot" style="color: rgb(163, 181, 199);"></i> Makati City, Philippines </p>
@@ -52,7 +69,7 @@
                 </div>
             </div>
             <div class="timeline-circle"></div>
-            <div class="job">
+            <div class="job" id="job3">
                 <div class="years">
                     <h2 class="range"> <br><br><br> September 2031 &mdash; December 2034 </h2>
                     <p class="loc"> <i class="fa-solid fa-location-dot" style="color: rgb(163, 181, 199);"></i> Makati City, Philippines </p>
