@@ -105,6 +105,8 @@ img {
 .geninfoh {
   text-decoration: underline whitesmoke 3px;
   font-size: 25px;
+  transition: color 0.2s ease-out;
+  cursor: default;
 }
 
 .geninfop {
@@ -146,6 +148,8 @@ img {
   width: 40%;
   margin: 10px auto;
   background-color: rgb(163, 181, 199);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  cursor: default;
 }
 
 #prog {
@@ -285,8 +289,5 @@ img {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
   cursor: default;
-}
-.hov:hover {
-  color: burlywood;
-  transition: 0.2s ease-out;
+  transition: color 0.2s ease-out;
 }

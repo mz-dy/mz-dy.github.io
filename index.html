@@ -44,7 +44,7 @@
         <div class="main">
             <div id="contact">
                 <div>
-                <h3 class="geninfoh"> CONTACT INFO </h3>
+                <h3 class="geninfoh" onmouseenter="head_highlight(this)" onmouseleave="head_resetHighlight(this)"> CONTACT INFO </h3>
                     <div class="tooltip">
                     <p class="geninfop" id="email" onclick="copyEmail()" onmouseleave="resetText()"> <i class="fa-solid fa-envelope-open" style="color: rgb(163, 181, 199);"></i> mileahzoeiody@gmail.com </p>
                     <span class="tooltiptext">Copy Email</span> 
@@ -65,14 +65,24 @@
                 </div>
 
                 <div style="margin-top:60px;">
-                <h3 class="geninfoh"> SKILLS </h3>
-                <p class="skill"> Diligent </p>
-                <p class="skill"> Goal-oriented </p>
-                <p class="skill"> Quick Learner </p>
+                <h3 class="geninfoh" onmouseenter="head_highlight(this)" onmouseleave="head_resetHighlight(this)"> SKILLS </h3>
+                <p class="skill" onmouseenter="highlight(this)" onmouseleave="resetHighlight(this)"> Diligent </p>
+                <p class="skill" onmouseenter="highlight(this)" onmouseleave="resetHighlight(this)"> Goal-oriented </p>
+                <p class="skill" onmouseenter="highlight(this)" onmouseleave="resetHighlight(this)"> Quick Learner </p>
+                <script>
+                    function highlight(skill) {
+                        skill.style.backgroundColor = "rgb(221, 236, 252)";
+                        skill.style.borderColor = "rgb(221, 236, 252)";
+                    }
+                    function resetHighlight(skill) {
+                        skill.style.backgroundColor = "rgb(163, 181, 199)";
+                        skill.style.borderColor = "rgb(163, 181, 199)";
+                    }
+                </script>
                 </div>
 
                 <div style="margin-top:60px;">
-                <h3 class="geninfoh"> PROGRAMMING </h3>
+                <h3 class="geninfoh" onmouseenter="head_highlight(this)" onmouseleave="head_resetHighlight(this)"> PROGRAMMING </h3>
                 
                     <div id="prog">
                         <div class="lang"> 
@@ -124,12 +134,12 @@
             </div>
             <div id="about">
                 <div style="background-color: rgba(28, 36, 38, 0.919); padding: 40px 0;">
-                    <h1 class="hov"> <span class="hov">About Me</span> </h1>
+                    <h1 class="hov"> <span class="hov" onmouseenter="head_highlight(this)" onmouseleave="head_resetHighlight(this)">About Me</span> </h1>
                     
                     <p style="margin: auto 100px;"> Computer Engineering graduate with a passion for programming and motivation for problem-solving, seeking to establish a web developer role and contribute to creating web applications, while gaining work experience and improving technical skills. </p>
                 </div>
                 <div style="background-color: rgba(58, 87, 93, 0.332); padding: 30px 0;">    
-                    <h1> <span class="hov">Education</span></h1>
+                    <h1> <span class="hov" onmouseenter="head_highlight(this)" onmouseleave="head_resetHighlight(this)">Education</span></h1>
                     <div class="education">
                         <p class="edu1"> <i class="fa-solid fa-graduation-cap" style="color: lightgray;"></i> Bachelor of Science in Computer Engineering (2023 &mdash; 2027)</p>
                         <p class="edu2"> University of San Carlos, Cebu City, Philippines </p>
@@ -146,13 +156,21 @@
                     </div>
                 </div>
                 <div style="background-color: rgba(119, 183, 204, 0.281); padding: 50px 0;">
-                    <h1> <span class="hov">Achievements</span> </h1>
+                    <h1> <span class="hov" onmouseenter="head_highlight(this)" onmouseleave="head_resetHighlight(this)">Achievements</span> </h1>
                     <ul>
                         <li> 3rd Ranking First Year Student for the Second Semester in the School of Engineering S.Y. 2023-2024 </li>
                         <li> 2nd Ranking First Year Student in BS CpE S.Y. 2023-2024 </li>
                         <li> Participation in the Robotek Competition 2019 </li>
                     </ul>
-                </div>  
+                </div>
+                <script>
+                    function head_highlight(header) {
+                        header.style.color = "burlywood";
+                    }
+                    function head_resetHighlight(header) {
+                        header.style.color = "whitesmoke";
+                    }
+                </script>  
             </div>
         </div>
 
